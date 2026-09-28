@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  background: #57B8FF;
+  overscroll-behavior: none;
+}
+
+body {
+  position: fixed;
+  inset: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+
+#game {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline: none;
+}
+
+#mute {
+  position: absolute;
+  right: max(10px, env(safe-area-inset-right));
+  bottom: max(10px, env(safe-area-inset-bottom));
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  border: 3px solid #0D2E45;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  color: #0D2E45;
+  cursor: pointer;
+  touch-action: manipulation;
+  z-index: 2;
+}
+
+#mute:hover { background: #fff; }
+#mute:focus-visible { outline: 3px solid #FBB13C; outline-offset: 2px; }
+
+#mute svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #0D2E45;
+}
+
+#mute .wave {
+  fill: none;
+  stroke: #0D2E45;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+#mute .off { display: none; }
+#mute.muted .on { display: none; }
+#mute.muted .off { display: block; }
+
+/* In portrait the bottom edge holds the lives bar, so the button moves to the free top-left corner. */
+@media (orientation: portrait) {
+  #mute {
+    right: auto;
+    bottom: auto;
+    left: max(10px, env(safe-area-inset-left));
+    top: max(10px, env(safe-area-inset-top));
+  }
+}

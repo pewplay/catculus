@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
+  "title": "Catculus",
+  "description": "Chain adjacent number tiles that add up to the target while sleepy cats hide the values in this free math puzzle you play in your browser.",
+  "about": "Catculus is a cosy arithmetic puzzle about adding numbers on a growing grid. Each round shows a target number, and you pick a chain of neighbouring tiles whose values add up to it. Hit the sum exactly for a purrfect bonus; overshoot and the difference comes straight off your nine lives.\n\nEvery pick raises the used tiles by one and uncovers new tiles around them, so the board keeps growing and changing. Cats hop in after each round and sit on tiles, hiding their numbers behind a question mark, yet tiles with cats score five times more. A shrinking multiplier rewards quick thinking, and every few rounds you choose one of three bonus effects, such as catnip, zoomies or hairballs, that bend the rules in your favour.\n\nOriginally created by Antti Haavikko for js13kGames 2025.",
+  "howToPlay": "Select a chain of adjacent tiles whose numbers add up to the target shown on the board. The round ends as soon as your sum reaches or passes the target, and any overshoot costs you that many lives. Tiles hidden under cats still count, so remember their values, and play fast to keep your multiplier high. The game ends when all nine lives are gone.",
+  "controls": [
+    { "input": "Mouse click or drag", "action": "Select or deselect tiles and press buttons" },
+    { "input": "Tap or swipe", "action": "Select tiles on touch screens" },
+    { "input": "Tap a bonus twice", "action": "Read its effect, then choose it" }
+  ],
+  "tips": [
+    "Memorise the number under each cat before it lands, because tiles with cats score five times as much.",
+    "Build your chain from small tiles first so you can stop exactly on the target instead of overshooting.",
+    "Answer quickly: the multiplier drains while you think and only perfect sums raise its maximum.",
+    "Pick Copycat when your lives run low, since it heals you straight back to all nine."
+  ],
+  "faq": [
+    { "question": "Is Catculus free to play?", "answer": "Yes, Catculus is completely free and runs in your browser with no download or sign-up." },
+    { "question": "Can I play Catculus on a phone or tablet?", "answer": "Yes. The board switches to a vertical layout in portrait mode and you select tiles by tapping or swiping across them." },
+    { "question": "What happens if my sum is not exact?", "answer": "The round still scores, but you lose one life for every point you went over the target and miss the perfect bonus." }
+  ],
+  "category": "Puzzle",
+  "tags": ["math", "numbers", "cats", "puzzle", "brain", "casual"],
+  "author": "Antti Haavikko",
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "screenshots": ["screenshots/1.png", "screenshots/2.png", "screenshots/3.png"],
+  "added": "2026-09-28",
+  "draft": false
+}
